@@ -2,7 +2,7 @@
 ## Basic
 - [ ] to-do
 - [/] incomplete
-- [x] done
+- [x] done ✅ 2026-03-11
 - [-] canceled
 - [>] forwarded
 - [<] scheduling
