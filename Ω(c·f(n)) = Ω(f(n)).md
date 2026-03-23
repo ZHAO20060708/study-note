@@ -1,8 +1,16 @@
+要证明 $\Omega(c \cdot f(n)) = \Omega(f(n))$，其中 $c$ 是一个正常数（$c > 0$），我们需要根据大 $\Omega$ 符号（Big-Omega）的定义，证明这两个集合是相互包含的。
+
+### 1. 大 $\Omega$ 符号的定义
+
+对于渐近非负函数 $g(n)$ 和 $h(n)$，$g(n) \in \Omega(h(n))$ 的定义是：
+存在正常数 $n_0$ 和 $k$，使得对于所有的 $n \ge n_0$，满足：
+$$g(n) \ge k \cdot h(n)$$
+
 我们将集合 $A = \Omega(c \cdot f(n))$ 和集合 $B = \Omega(f(n))$。要证明 $A = B$，我们需要证明 $A \subseteq B$ 且 $B \subseteq A$。
 
 ---
 
-### 证明 $\Omega(c \cdot f(n)) \subseteq \Omega(f(n))$
+### 2. 证明 $\Omega(c \cdot f(n)) \subseteq \Omega(f(n))$
 
 **假设：** 任取函数 $g(n) \in \Omega(c \cdot f(n))$。
 
@@ -25,7 +33,7 @@ $$g(n) \ge k_2 \cdot f(n)$$
 
 ---
 
-### 证明 $\Omega(f(n)) \subseteq \Omega(c \cdot f(n))$
+### 3. 证明 $\Omega(f(n)) \subseteq \Omega(c \cdot f(n))$
 
 **假设：** 任取函数 $g(n) \in \Omega(f(n))$。
 
@@ -49,7 +57,7 @@ $$g(n) \ge k_4 \cdot (c \cdot f(n))$$
 
 ---
 
-### 总结
+### 4. 总结
 
 由上述两步证明可知：
 1. $\Omega(c \cdot f(n)) \subseteq \Omega(f(n))$
